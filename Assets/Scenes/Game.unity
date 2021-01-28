@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 02820cdf94a62da41b21ae8de3f9db8e,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -113,6 +114,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &478047686 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1692551232788328, guid: 609499a33d059eb4f9b0e1578f29eb19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1157267436}
+--- !u!114 &478047691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478047686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c323268e67fcc6447b51e022b8d08d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: 0
 --- !u!1 &616020415
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +318,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5206\u6570\uFF1A0000"
+  m_Text: "0\u5206"
 --- !u!222 &688839742
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -539,6 +557,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1157267436
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154439681879780, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61313036048117616, guid: 609499a33d059eb4f9b0e1578f29eb19,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50566038302945336, guid: 609499a33d059eb4f9b0e1578f29eb19,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50566038302945336, guid: 609499a33d059eb4f9b0e1578f29eb19,
+        type: 2}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50566038302945336, guid: 609499a33d059eb4f9b0e1578f29eb19,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 609499a33d059eb4f9b0e1578f29eb19, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1225009980
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1225009981
 RectTransform:
   m_ObjectHideFlags: 0

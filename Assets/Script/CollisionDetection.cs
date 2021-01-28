@@ -49,7 +49,7 @@ public class CollisionDetection : MonoBehaviour
                 //当超出最大水果限制 游戏结束
                 else
                 {
-                    //TODO 游戏结束
+                    //TODO 游戏胜利
                 }
 
             }

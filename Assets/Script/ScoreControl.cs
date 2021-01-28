@@ -30,4 +30,12 @@ public class ScoreControl : MonoBehaviour
         scoreDisplay.text = score.ToString() + "分";
     }
 
+    /// <summary>
+    /// 保存分数
+    /// </summary>
+    public void SaveScore()
+    {
+        PlayerPrefs.SetFloat("score", score);//保存分数
+    }
+
 }

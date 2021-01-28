@@ -35,7 +35,9 @@ public class SizeChange : MonoBehaviour
     /// <param name="obj">需要缩小的物体</param>
     public void ShrinkingObjects(GameObject obj)
     {
-        Destroy(obj.GetComponent<CollisionDetection>());//删除物体上的CollisionDetection脚本
+        // Destroy(obj.GetComponent<Rigidbody2D>());//删除物体上的刚体组件
+        Destroy(obj.GetComponent<CollisionDetection>());//删除物体上的CollisionDetection函数
+        Destroy(obj.GetComponent<CircleCollider2D>());//删除物体上的碰撞体组件
         StartCoroutine(SlowlyShrinking(obj));//调用携程函数
     }
 
