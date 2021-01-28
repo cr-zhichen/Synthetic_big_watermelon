@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 702319766}
   - component: {fileID: 702319767}
   - component: {fileID: 702319768}
+  - component: {fileID: 702319769}
   m_Layer: 0
   m_Name: CodeControl
   m_TagString: Untagged
@@ -371,6 +372,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1248208f7990b7444b511da407543acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &702319769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702319765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc721d8544d3b349b5f80a601c7de80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreDisplay: {fileID: 688839741}
 --- !u!1 &756864384
 GameObject:
   m_ObjectHideFlags: 0

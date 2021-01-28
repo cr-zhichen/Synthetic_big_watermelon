@@ -4,7 +4,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class FruitList : MonoBehaviour
 {
@@ -14,16 +13,15 @@ public class FruitList : MonoBehaviour
     //随机获取水果
     public GameObject RandomReturnOfFruits()
     {
-        System.Random rd = new System.Random();
         if (fruitList.Length >= 5)//判断总水果是否大于5个
         {
-            int randomNumber = rd.Next(0, 5);
+            int randomNumber = Random.Range(0, 5);
             GameObject i = fruitList[randomNumber];
             return i;
         }
         else
         {
-            int randomNumber = rd.Next(0, fruitList.Length);
+            int randomNumber = Random.Range(0, fruitList.Length);
             GameObject i = fruitList[randomNumber];
             return i;
         }
