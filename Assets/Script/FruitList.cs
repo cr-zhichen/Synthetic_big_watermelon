@@ -15,9 +15,18 @@ public class FruitList : MonoBehaviour
     public GameObject RandomReturnOfFruits()
     {
         System.Random rd = new System.Random();
-        int randomNumber = rd.Next(0, fruitList.Length);
-        GameObject i = fruitList[randomNumber];
-        return i;
+        if (fruitList.Length >= 5)//判断总水果是否大于5个
+        {
+            int randomNumber = rd.Next(0, 5);
+            GameObject i = fruitList[randomNumber];
+            return i;
+        }
+        else
+        {
+            int randomNumber = rd.Next(0, fruitList.Length);
+            GameObject i = fruitList[randomNumber];
+            return i;
+        }
     }
 
 
