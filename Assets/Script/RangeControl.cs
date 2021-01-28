@@ -10,6 +10,7 @@ public class RangeControl : MonoBehaviour
 
     Vector2 worldPosLeftBottom;
     Vector2 worldPosTopRight;
+
     void Start()
     {
         worldPosLeftBottom = Camera.main.ViewportToWorldPoint(Vector2.zero);
@@ -19,13 +20,16 @@ public class RangeControl : MonoBehaviour
     private void Update()
     {
         LimitPosition(this.transform);
+
     }
 
     public void LimitPosition(Transform trNeedLimit)
     {
         trNeedLimit.position = new Vector3(Mathf.Clamp(trNeedLimit.position.x, worldPosLeftBottom.x + 0.3f, worldPosTopRight.x - 0.3f),
-                                           Mathf.Clamp(trNeedLimit.position.y, worldPosLeftBottom.y, worldPosTopRight.y),
-                                           trNeedLimit.position.z);
+                                           Mathf.Clamp(trNeedLimit.position.y, worldPosLeftBottom.y, worldPosTopRight.y));
+
+
+
     }
 
 }

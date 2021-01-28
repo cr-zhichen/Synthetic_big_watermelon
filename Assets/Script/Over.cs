@@ -17,10 +17,13 @@ public class Over : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         t += Time.deltaTime;
-        if (t >= 1.0f)
+        if (other.transform.tag != "Air")
         {
-            GameObject.Find("CodeControl").GetComponent<ScoreControl>().SaveScore();//保存分数
-            SceneManager.LoadScene("Over");//切换场景
+            if (t >= 1.0f)
+            {
+                GameObject.Find("CodeControl").GetComponent<ScoreControl>().SaveScore();//保存分数
+                SceneManager.LoadScene("Over");//切换场景
+            }
         }
     }
 
