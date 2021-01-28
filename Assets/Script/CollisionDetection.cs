@@ -34,15 +34,17 @@ public class CollisionDetection : MonoBehaviour
                 {
                     //在被碰撞的物体原有的位置上生成新物体
                     GameObject i = GameObject.Instantiate(fruitList[Convert.ToInt32(_tag)]);//! 由于物品Tag命名都为顺序数字 所以采用该办法
-                    i.transform.position = v2.position + new Vector3(UnityEngine.Random.Range(5, 10) * 0.1f, UnityEngine.Random.Range(5, 10) * 0.1f, 0);//! 生成物体 使用随机防止同地点击无限堆高
+                    i.transform.position = v2.position + new Vector3(UnityEngine.Random.Range(-10, 10) * 0.1f, UnityEngine.Random.Range(-10, 10) * 0.1f, 0);//! 生成物体 使用随机防止同地点击无限堆高
 
                     i.GetComponent<Rigidbody2D>().simulated = true;//让水果获得重力
 
                     //增加分数
                     GameObject.Find("CodeControl").GetComponent<ScoreControl>().ScoreIncrease(10 * Convert.ToInt32(_tag));
 
-                    Destroy(this.gameObject);//清除自身
-                    Destroy(other.gameObject);//清除自身
+                    GameObject.Find("CodeControl").GetComponent<SizeChange>().ShrinkingObjects(this.gameObject);
+                    GameObject.Find("CodeControl").GetComponent<SizeChange>().ShrinkingObjects(other.gameObject);
+                    // Destroy(this.gameObject);//清除自身
+                    // Destroy(other.gameObject);//清除自身
                 }
                 //当超出最大水果限制 游戏结束
                 else
