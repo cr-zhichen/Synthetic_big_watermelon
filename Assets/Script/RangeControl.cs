@@ -1,5 +1,6 @@
 ﻿/// <summary>
 /// 控制物体不超过边界
+/// 此脚本已被AirWall脚本替代
 /// </summary>
 using System.Collections;
 using System.Collections.Generic;
