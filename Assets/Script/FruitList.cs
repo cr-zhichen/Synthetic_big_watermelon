@@ -13,9 +13,9 @@ public class FruitList : MonoBehaviour
     //随机获取水果
     public GameObject RandomReturnOfFruits()
     {
-        if (fruitList.Length >= 5)//判断总水果是否大于5个
+        if (fruitList.Length >= 4)//判断总水果是否大于4个
         {
-            int randomNumber = Random.Range(0, 5);
+            int randomNumber = Random.Range(0, 4);
             GameObject i = fruitList[randomNumber];
             return i;
         }
