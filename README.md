@@ -1,10 +1,15 @@
 # 合成大西瓜Unity复刻版
 
-这是一个复刻“合成大西瓜”小游戏的Unity项目，本人为大二学生，在家闲着无聊，本项目现已实现了大部分玩法与规则，要是有觉得我哪里写的不好或者有更好的解决办法的话，希望能指出我的问题。
+这是一个使用Unity复刻“合成大西瓜”的简单项目  
+寒假在家没事干就想随便做一下，现在已经基本完成项目的编写  
 
 ## 安卓发布
 
-[发布地址](https://github.com/cr-zhichen/Synthetic_big_watermelon/releases/tag/v0.1-beta.1)  
+[github发布地址](https://github.com/cr-zhichen/Synthetic_big_watermelon/releases/tag/v0.1-beta.1)  
+
+## Web地址
+
+[Web演示地址](https://gua.ccrui.cn)  
 
 ## 开发环境
 
@@ -27,10 +32,11 @@ vscode
 | 水果碰撞 | √ 100%   |
 | 游戏结束 | √ 90%+   |
 | 分数记录 | √ 100%   |
-| 游戏胜利 | × 0%     |
-| 游戏音效 | × 0%     |
+| 游戏胜利 | √ 70%+   |
+| 游戏音效 | √ 100%   |
 | 水果动效 | √ 60%+   |
 | 安卓发布 | √ 100%   |
+| Web发布  | √ 100%   |
 
 ## 项目预览
 

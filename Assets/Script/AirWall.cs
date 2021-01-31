@@ -20,7 +20,7 @@ public class AirWall : MonoBehaviour
         worldPosLeftBottom = Camera.main.ViewportToWorldPoint(Vector2.zero);
         worldPosTopRight = Camera.main.ViewportToWorldPoint(Vector2.one);
 
-        Debug.Log(worldPosLeftBottom.x);
+        // Debug.Log(worldPosLeftBottom.x);
 
         _airWall = GameObject.Instantiate(airWall);
         _airWall2 = GameObject.Instantiate(airWall);
@@ -29,14 +29,12 @@ public class AirWall : MonoBehaviour
 
     private void Update()
     {
+        worldPosLeftBottom = Camera.main.ViewportToWorldPoint(Vector2.zero);
+        worldPosTopRight = Camera.main.ViewportToWorldPoint(Vector2.one);
+
         _airWall.transform.position = new Vector3(worldPosLeftBottom.x - 5, 0, 0);
         _airWall2.transform.position = new Vector3(worldPosTopRight.x + 5, 0, 0);
 
     }
-
-
-
-
-    // }
 
 }

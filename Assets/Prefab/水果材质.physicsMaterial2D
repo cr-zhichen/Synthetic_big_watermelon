@@ -5,6 +5,6 @@ PhysicsMaterial2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Physics Material 2D
+  m_Name: "\u6C34\u679C\u6750\u8D28"
   friction: 0.00001
   bounciness: 0

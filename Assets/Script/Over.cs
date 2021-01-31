@@ -19,7 +19,7 @@ public class Over : MonoBehaviour
         t += Time.deltaTime;
         if (other.transform.tag != "Air")
         {
-            if (t >= 1.0f)
+            if (t >= 2.0f)
             {
                 GameObject.Find("CodeControl").GetComponent<ScoreControl>().SaveScore();//保存分数
                 SceneManager.LoadScene("Over");//切换场景

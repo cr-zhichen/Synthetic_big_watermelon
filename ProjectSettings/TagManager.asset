@@ -17,6 +17,8 @@ TagManager:
   - 11
   - over
   - Air
+  - Sound
+  - Floor
   layers:
   - Default
   - TransparentFX
