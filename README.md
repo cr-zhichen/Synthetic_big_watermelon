@@ -5,7 +5,7 @@
 
 ## 安卓发布
 
-[github发布地址](https://github.com/cr-zhichen/Synthetic_big_watermelon/releases/tag/v0.1-beta.1)  
+[github发布地址](https://github.com/cr-zhichen/Synthetic_big_watermelon/releases/tag/v0.1-beta.2)  
 
 ## Web地址
 
